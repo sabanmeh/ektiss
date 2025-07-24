@@ -8,14 +8,14 @@ const Hero = () => {
 
   return (
     <section id="accueil" className="min-h-screen relative bg-hero-gradient text-white flex items-center pt-16 overflow-hidden">
-      {/* Image de fond avec overlay */}
-      <div className="absolute inset-0 z-0">
+      {/* Image de fond avec overlay - couvre tout l'espace */}
+      <div className="absolute inset-0 z-0 w-full h-full">
         <img 
           src="/lovable-uploads/52f541e9-16ad-465b-8a0b-86e1663d2f0e.png"
           alt="Architecture moderne"
-          className="w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="absolute inset-0 w-full h-full bg-primary/70"></div>
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">

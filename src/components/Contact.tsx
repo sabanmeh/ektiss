@@ -28,7 +28,7 @@ const Contact = () => {
                   <div className="flex justify-start mb-4">
                     <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-primary/20">
                       <img 
-                        src={dekraProfileWoman}
+                        src="/lovable-uploads/0175ec22-384f-4345-8bff-3179185bb8bb.png"
                         alt="Dekra Sefsafi"
                         className="w-full h-full object-cover"
                       />
