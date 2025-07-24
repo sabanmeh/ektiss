@@ -15,7 +15,7 @@ const Hero = () => {
           alt="Architecture moderne"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-primary/50"></div>
+        <div className="absolute inset-0 bg-primary/70"></div>
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
