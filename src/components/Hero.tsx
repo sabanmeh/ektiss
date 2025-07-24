@@ -41,7 +41,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 transition-all duration-300"
+              className="border-white/80 text-white hover:bg-white hover:text-primary hover:border-white px-8 py-3 transition-all duration-300 bg-transparent"
               onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Découvrir nos services
