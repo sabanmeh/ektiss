@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import dekraProfile from "@/assets/dekra-profile.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -14,25 +13,13 @@ const Hero = () => {
         <img 
           src="/lovable-uploads/52f541e9-16ad-465b-8a0b-86e1663d2f0e.png"
           alt="Architecture moderne"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-primary/80"></div>
+        <div className="absolute inset-0 bg-primary/70"></div>
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Photo de profil et nom */}
-          <div className="flex flex-col items-center mb-8">
-            <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white/20 mb-4">
-              <img 
-                src={dekraProfile}
-                alt="Dekra Sefsafi"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-xl text-secondary font-medium">Dekra Sefsafi</h3>
-          </div>
-
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="block">Économiste de la construction</span>
             <span className="text-secondary">L'art de concilier vision architecturale et réalité budgétaire</span>

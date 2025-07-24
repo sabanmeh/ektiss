@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
+import dekraProfileWoman from "@/assets/dekra-profile-woman.jpg";
 
 const Contact = () => {
   return (
@@ -22,7 +23,17 @@ const Contact = () => {
             {/* Informations de contact */}
             <div className="space-y-6">
               <Card>
-                <CardHeader>
+                <CardHeader className="text-center">
+                  {/* Photo de profil */}
+                  <div className="flex justify-center mb-4">
+                    <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-primary/20">
+                      <img 
+                        src={dekraProfileWoman}
+                        alt="Dekra Sefsafi"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
                   <CardTitle className="text-2xl text-primary">EKTISS</CardTitle>
                   <CardDescription>Dekra Sefsafi - Économiste de la construction</CardDescription>
                 </CardHeader>
