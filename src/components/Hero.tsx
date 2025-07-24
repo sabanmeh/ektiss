@@ -9,13 +9,12 @@ const Hero = () => {
 
   return (
     <div 
-      className="fixed top-0 left-0 w-screen h-screen overflow-hidden"
+      className="w-full h-screen overflow-hidden"
       style={{
         background: `linear-gradient(rgba(22, 17, 67, 0.7), rgba(22, 17, 67, 0.7)), url(${heroImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed'
+        backgroundRepeat: 'no-repeat'
       }}
     >
       <section id="accueil" className="relative h-full flex items-center justify-center text-white pt-16">

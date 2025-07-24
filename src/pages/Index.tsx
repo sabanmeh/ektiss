@@ -10,7 +10,7 @@ const Index = () => {
     <>
       <Header />
       <Hero />
-      <div className="relative z-20 mt-[100vh] min-h-screen bg-background">
+      <div className="relative z-20 min-h-screen bg-background">
         <Services />
         <Expertise />
         <Contact />
