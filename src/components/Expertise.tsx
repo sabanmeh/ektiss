@@ -7,22 +7,26 @@ const Expertise = () => {
     {
       icon: School,
       title: "Bâtiments publics",
-      description: "Écoles, équipements sportifs, bâtiments administratifs"
+      description: "Écoles, équipements sportifs, bâtiments administratifs",
+      image: "/lovable-uploads/1f069e1f-fb9c-4da1-a43c-cb1ac1911aca.png"
     },
     {
       icon: Home,
       title: "Logements",
-      description: "Collectifs ou individuels, sociaux ou privés"
+      description: "Collectifs ou individuels, sociaux ou privés",
+      image: "/lovable-uploads/8ba30bb3-6932-4462-8412-e87b104c0c86.png"
     },
     {
       icon: Building2,
       title: "Tertiaire & commercial",
-      description: "Bureaux, commerces, bâtiments industriels"
+      description: "Bureaux, commerces, bâtiments industriels",
+      image: "/lovable-uploads/f5c1a072-ebac-4661-8522-00128f386355.png"
     },
     {
       icon: Settings,
       title: "Équipements techniques",
-      description: "Centres techniques, chaufferies, bâtiments spécifiques"
+      description: "Centres techniques, chaufferies, bâtiments spécifiques",
+      image: "/lovable-uploads/2a20032b-b01a-4a63-95d2-65ab738dd028.png"
     }
   ];
 
@@ -50,16 +54,22 @@ const Expertise = () => {
               {projets.map((projet, index) => {
                 const IconComponent = projet.icon;
                 return (
-                  <Card key={index} className="text-center hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <div className="mx-auto p-3 rounded-full bg-secondary/20 w-fit mb-4">
-                        <IconComponent className="w-8 h-8 text-primary" />
+                  <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div className="relative h-40 overflow-hidden">
+                      <img 
+                        src={projet.image}
+                        alt={projet.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/30 transition-colors duration-300"></div>
+                      <div className="absolute top-4 left-4 p-2 rounded-full bg-white shadow-lg">
+                        <IconComponent className="w-6 h-6 text-primary" />
                       </div>
+                    </div>
+                    <CardHeader>
                       <CardTitle className="text-lg">{projet.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
                       <CardDescription className="text-sm">{projet.description}</CardDescription>
-                    </CardContent>
+                    </CardHeader>
                   </Card>
                 );
               })}
@@ -72,12 +82,19 @@ const Expertise = () => {
               Secteurs d'intervention
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="bg-primary text-white">
-                <CardHeader>
+              <Card className="bg-primary text-white overflow-hidden relative">
+                <div className="absolute inset-0 opacity-10">
+                  <img 
+                    src="/lovable-uploads/52f541e9-16ad-465b-8a0b-86e1663d2f0e.png"
+                    alt="Architecture"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardHeader className="relative z-10">
                   <Badge variant="secondary" className="w-fit mb-2">Secteur Public</Badge>
                   <CardTitle className="text-2xl">Marchés publics</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="relative z-10">
                   <p className="text-white/90">
                     Parfaite maîtrise du Code de la Commande Publique, rédaction des pièces réglementaires, 
                     accompagnement AMO.
@@ -85,12 +102,19 @@ const Expertise = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-secondary text-primary">
-                <CardHeader>
+              <Card className="bg-secondary text-primary overflow-hidden relative">
+                <div className="absolute inset-0 opacity-10">
+                  <img 
+                    src="/lovable-uploads/f5c1a072-ebac-4661-8522-00128f386355.png"
+                    alt="Architecture"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardHeader className="relative z-10">
                   <Badge variant="outline" className="w-fit mb-2 border-primary text-primary">Secteur Privé</Badge>
                   <CardTitle className="text-2xl">Marchés privés</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="relative z-10">
                   <p>
                     Flexibilité, proximité avec les entreprises, adaptation aux contraintes spécifiques.
                   </p>
@@ -104,8 +128,15 @@ const Expertise = () => {
             <h2 className="text-4xl font-bold text-primary mb-8 text-center">
               Nos clients
             </h2>
-            <div className="bg-section rounded-lg p-8">
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-section rounded-lg p-8 relative overflow-hidden">
+              <div className="absolute right-0 top-0 w-1/3 h-full opacity-5">
+                <img 
+                  src="/lovable-uploads/2a20032b-b01a-4a63-95d2-65ab738dd028.png"
+                  alt="Collaboration"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="grid md:grid-cols-2 gap-6 relative z-10">
                 {clients.map((client, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <div className="w-3 h-3 rounded-full bg-secondary mt-2 flex-shrink-0"></div>

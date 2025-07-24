@@ -7,8 +7,18 @@ const Hero = () => {
   };
 
   return (
-    <section id="accueil" className="min-h-screen bg-hero-gradient text-white flex items-center pt-16">
-      <div className="container mx-auto px-4 py-20">
+    <section id="accueil" className="min-h-screen relative bg-hero-gradient text-white flex items-center pt-16 overflow-hidden">
+      {/* Image de fond avec overlay */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/lovable-uploads/52f541e9-16ad-465b-8a0b-86e1663d2f0e.png"
+          alt="Architecture moderne"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-hero-gradient opacity-85"></div>
+      </div>
+
+      <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="block">Économiste de la construction</span>

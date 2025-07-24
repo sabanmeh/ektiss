@@ -48,8 +48,17 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-section">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-20 bg-section relative">
+      {/* Image décorative en arrière-plan */}
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/3 h-2/3 opacity-5 hidden lg:block">
+        <img 
+          src="/lovable-uploads/f5c1a072-ebac-4661-8522-00128f386355.png"
+          alt="Architecture moderne"
+          className="w-full h-full object-cover rounded-l-3xl"
+        />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4">
             Nos missions
@@ -64,7 +73,7 @@ const Services = () => {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Card key={index} className="h-full hover:shadow-lg transition-shadow">
+              <Card key={index} className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur-sm">
                 <CardHeader>
                   <div className="flex items-center space-x-3 mb-2">
                     <div className="p-2 rounded-lg bg-primary/10">
