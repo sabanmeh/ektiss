@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero-construction.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -10,7 +11,7 @@ const Hero = () => {
     <div 
       className="fixed top-0 left-0 w-screen h-screen overflow-hidden"
       style={{
-        background: `linear-gradient(rgba(22, 17, 67, 0.7), rgba(22, 17, 67, 0.7)), url('/lovable-uploads/52f541e9-16ad-465b-8a0b-86e1663d2f0e.png')`,
+        background: `linear-gradient(rgba(22, 17, 67, 0.7), rgba(22, 17, 67, 0.7)), url(${heroImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
