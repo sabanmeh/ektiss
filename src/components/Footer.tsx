@@ -6,13 +6,12 @@ const Footer = () => {
           {/* Logo et description */}
           <div>
             <img 
-              src="/lovable-uploads/b75c32d4-96ef-4d93-8ef1-92b7993f7b01.png" 
+              src="/lovable-uploads/a7ab6e40-60d5-4f23-88fa-ecdecd663d6a.png" 
               alt="EKTISS" 
               className="h-8 mb-4 brightness-0 invert"
             />
             <p className="text-white/80 text-sm">
-              Économiste de la construction - Maîtrise des coûts et qualité technique 
-              pour tous vos projets de construction.
+              Économiste de la construction pour tous vos projets.
             </p>
           </div>
 
@@ -32,7 +31,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-white/80 text-sm">
               <p>Dekra Sefsafi</p>
-              <p>contact@ektiss.fr</p>
+              <p>dekra@ektiss.com</p>
               <p>France</p>
             </div>
           </div>
@@ -40,7 +39,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm">
-            © 2024 EKTISS. Tous droits réservés.
+            © 2025 EKTISS. Tous droits réservés.
           </p>
           <p className="text-white/60 text-sm mt-2 md:mt-0">
             Propulsé par <span className="text-secondary font-semibold">Beazy</span>

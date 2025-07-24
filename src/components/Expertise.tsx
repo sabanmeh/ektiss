@@ -82,19 +82,12 @@ const Expertise = () => {
               Secteurs d'intervention
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="bg-primary text-white overflow-hidden relative">
-                <div className="absolute inset-0 opacity-10">
-                  <img 
-                    src="/lovable-uploads/52f541e9-16ad-465b-8a0b-86e1663d2f0e.png"
-                    alt="Architecture"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <CardHeader className="relative z-10">
+              <Card className="bg-primary text-white">
+                <CardHeader>
                   <Badge variant="secondary" className="w-fit mb-2">Secteur Public</Badge>
                   <CardTitle className="text-2xl">Marchés publics</CardTitle>
                 </CardHeader>
-                <CardContent className="relative z-10">
+                <CardContent>
                   <p className="text-white/90">
                     Parfaite maîtrise du Code de la Commande Publique, rédaction des pièces réglementaires, 
                     accompagnement AMO.
@@ -102,19 +95,12 @@ const Expertise = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-secondary text-primary overflow-hidden relative">
-                <div className="absolute inset-0 opacity-10">
-                  <img 
-                    src="/lovable-uploads/f5c1a072-ebac-4661-8522-00128f386355.png"
-                    alt="Architecture"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <CardHeader className="relative z-10">
+              <Card className="bg-secondary text-primary">
+                <CardHeader>
                   <Badge variant="outline" className="w-fit mb-2 border-primary text-primary">Secteur Privé</Badge>
                   <CardTitle className="text-2xl">Marchés privés</CardTitle>
                 </CardHeader>
-                <CardContent className="relative z-10">
+                <CardContent>
                   <p>
                     Flexibilité, proximité avec les entreprises, adaptation aux contraintes spécifiques.
                   </p>
@@ -128,15 +114,8 @@ const Expertise = () => {
             <h2 className="text-4xl font-bold text-primary mb-8 text-center">
               Nos clients
             </h2>
-            <div className="bg-section rounded-lg p-8 relative overflow-hidden">
-              <div className="absolute right-0 top-0 w-1/3 h-full opacity-5">
-                <img 
-                  src="/lovable-uploads/2a20032b-b01a-4a63-95d2-65ab738dd028.png"
-                  alt="Collaboration"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="grid md:grid-cols-2 gap-6 relative z-10">
+            <div className="bg-section rounded-lg p-8">
+              <div className="grid md:grid-cols-2 gap-6">
                 {clients.map((client, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <div className="w-3 h-3 rounded-full bg-secondary mt-2 flex-shrink-0"></div>

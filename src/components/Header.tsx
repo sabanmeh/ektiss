@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/b75c32d4-96ef-4d93-8ef1-92b7993f7b01.png" 
+            src="/lovable-uploads/a7ab6e40-60d5-4f23-88fa-ecdecd663d6a.png" 
             alt="EKTISS" 
             className="h-8"
           />

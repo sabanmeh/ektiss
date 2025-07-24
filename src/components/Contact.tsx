@@ -29,7 +29,7 @@ const Contact = () => {
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-primary" />
-                    <span>contact@ektiss.fr</span>
+                    <span>dekra@ektiss.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="w-5 h-5 text-primary" />
