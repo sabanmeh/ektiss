@@ -36,6 +36,14 @@ const Header = () => {
           >
             Expertise
           </button>
+          <a 
+            href="https://portail.ektiss.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-foreground hover:text-primary transition-colors"
+          >
+            Portail client
+          </a>
         </nav>
 
         <Button 

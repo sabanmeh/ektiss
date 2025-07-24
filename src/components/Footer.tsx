@@ -42,7 +42,7 @@ const Footer = () => {
             © 2025 EKTISS. Tous droits réservés.
           </p>
           <p className="text-white/60 text-sm mt-2 md:mt-0">
-            Propulsé par <span className="text-secondary font-semibold">Beazy</span>
+            Propulsé par <a href="https://beazy.ch/" target="_blank" rel="noopener noreferrer" className="text-secondary font-semibold hover:text-secondary/80 transition-colors">Beazy</a>
           </p>
         </div>
       </div>
