@@ -9,17 +9,19 @@ const Hero = () => {
   return (
     <section 
       id="accueil" 
-      className="min-h-screen relative text-white flex items-center pt-16 w-full"
+      className="min-h-screen relative text-white flex items-center pt-16 w-full overflow-hidden"
       style={{
         backgroundImage: `url('/lovable-uploads/52f541e9-16ad-465b-8a0b-86e1663d2f0e.png')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed'
+        width: '100vw',
+        marginLeft: 'calc(-50vw + 50%)',
+        height: '100vh'
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-primary/70 z-0"></div>
+      <div className="absolute inset-0 bg-primary/70 z-0 w-full h-full"></div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
