@@ -23,9 +23,9 @@ const Contact = () => {
             {/* Informations de contact */}
             <div className="space-y-6">
               <Card>
-                <CardHeader className="text-center">
+                <CardHeader className="text-left">
                   {/* Photo de profil */}
-                  <div className="flex justify-center mb-4">
+                  <div className="flex justify-start mb-4">
                     <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-primary/20">
                       <img 
                         src={dekraProfileWoman}
