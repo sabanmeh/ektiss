@@ -41,9 +41,14 @@ const Footer = () => {
           <p className="text-white/60 text-sm">
             © 2025 EKTISS. Tous droits réservés.
           </p>
-          <p className="text-white/60 text-sm mt-2 md:mt-0">
-            Propulsé par <a href="https://beazy.ch/" target="_blank" rel="noopener noreferrer" className="text-secondary font-semibold hover:text-secondary/80 transition-colors">Beazy</a>
-          </p>
+          <div className="text-white/60 text-sm mt-2 md:mt-0 flex flex-col md:flex-row gap-1 md:gap-4 items-center">
+            <p>
+              Propulsé par <a href="https://beazy.ch/" target="_blank" rel="noopener noreferrer" className="text-secondary font-semibold hover:text-secondary/80 transition-colors">Beazy</a>
+            </p>
+            <p>
+              Développé par <a href="https://www.linkedin.com/in/sabanmehic/" target="_blank" rel="noopener noreferrer" className="text-secondary font-semibold hover:text-secondary/80 transition-colors">Saban MEHIC</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
