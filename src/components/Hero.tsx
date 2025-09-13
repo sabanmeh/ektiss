@@ -18,30 +18,30 @@ const Hero = () => {
       }}
     >
       <section id="accueil" className="relative h-full flex items-center justify-center text-white pt-20">
-        <div className="container mx-auto px-4 py-20 relative z-10">
+        <div className="container mx-auto px-6 md:px-4 py-12 md:py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="block">Économiste de la construction</span>
-              <span className="text-secondary">L'art de concilier vision architecturale et réalité budgétaire</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
+              <span className="block mb-2 md:mb-0">Économiste de la construction</span>
+              <span className="text-secondary block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 md:mt-0">L'art de concilier vision architecturale et réalité budgétaire</span>
             </h1>
             
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed px-4 md:px-0">
               Au cœur de chaque projet de construction, l'économiste de la construction joue un rôle clé : 
               garantir la maîtrise des coûts et la qualité technique des prestations, du premier trait de crayon à la livraison finale.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col gap-4 sm:gap-6 justify-center px-4 md:px-0">
               <Button 
                 onClick={scrollToContact}
                 size="lg"
-                className="bg-secondary text-primary hover:bg-secondary/90 font-semibold px-10 py-4 text-lg transition-all duration-300 hover:-translate-y-1 shadow-2xl hover:shadow-3xl rounded-xl"
+                className="bg-secondary text-primary hover:bg-secondary/90 font-semibold px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 hover:-translate-y-1 shadow-2xl hover:shadow-3xl rounded-xl w-full sm:w-auto"
               >
                 Démarrer votre projet
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-white/60 text-white hover:bg-white hover:text-primary hover:border-white px-10 py-4 text-lg transition-all duration-300 bg-white/5 backdrop-blur-sm hover:-translate-y-1 shadow-2xl hover:shadow-3xl rounded-xl"
+                className="border-2 border-white/60 text-white hover:bg-white hover:text-primary hover:border-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 bg-white/5 backdrop-blur-sm hover:-translate-y-1 shadow-2xl hover:shadow-3xl rounded-xl w-full sm:w-auto"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Découvrir nos services

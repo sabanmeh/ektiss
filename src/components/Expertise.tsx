@@ -38,19 +38,19 @@ const Expertise = () => {
   ];
 
   return (
-    <section id="expertise" className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="expertise" className="py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Types de projets */}
-          <div className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 text-center tracking-tight">
+          <div className="mb-12 md:mb-20">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6 text-center tracking-tight">
               Types de projets traités
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground text-center mb-16 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground text-center mb-10 md:mb-16 max-w-3xl mx-auto leading-relaxed">
               Nous intervenons sur une grande variété de projets, en neuf comme en réhabilitation
             </p>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {projets.map((projet, index) => {
                 const IconComponent = projet.icon;
                 return (

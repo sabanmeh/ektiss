@@ -48,7 +48,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-section relative">
+    <section id="services" className="py-16 md:py-24 bg-section relative">
       {/* Image décorative en arrière-plan */}
       <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/3 h-2/3 opacity-5 hidden lg:block">
         <img 
@@ -58,8 +58,8 @@ const Services = () => {
         />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center mb-20">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 tracking-tight">
               Nos missions
             </h2>
@@ -69,7 +69,7 @@ const Services = () => {
             </p>
           </div>
 
-        <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-10 max-w-7xl mx-auto">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (

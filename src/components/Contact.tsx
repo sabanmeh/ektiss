@@ -7,11 +7,11 @@ import dekraProfileWoman from "@/assets/dekra-profile-woman.jpg";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 bg-section">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-16 md:py-24 bg-section">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 tracking-tight">
+          <div className="text-center mb-12 md:mb-20">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6 tracking-tight">
               Contactez-nous
             </h2>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
@@ -19,7 +19,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             {/* Informations de contact */}
             <div className="space-y-6">
               <Card className="border-0 shadow-xl rounded-2xl bg-white/95 backdrop-blur-sm">
