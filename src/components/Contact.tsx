@@ -11,10 +11,10 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 tracking-tight">
               Contactez-nous
             </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Parlons de votre projet ensemble
             </p>
           </div>
@@ -34,7 +34,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  <CardTitle className="text-2xl text-primary">EKTISS</CardTitle>
+                  <CardTitle className="text-xl md:text-2xl text-primary">EKTISS</CardTitle>
                   <CardDescription>Dekra Sefsafi - Économiste de la construction</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -54,7 +54,7 @@ const Contact = () => {
               </Card>
 
               <div className="bg-primary text-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold mb-4">Notre engagement</h3>
+                <h3 className="text-lg md:text-xl font-semibold mb-4">Notre engagement</h3>
                 <p className="text-white/90">
                   Grâce à notre expertise, nous sécurisons les choix économiques, 
                   nous structurons les consultations, et nous assurons la cohérence budgétaire du projet.
@@ -64,12 +64,12 @@ const Contact = () => {
 
             {/* Formulaire de contact */}
             <Card className="border-0 shadow-xl rounded-2xl bg-white/95 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle>Demande de devis</CardTitle>
-                <CardDescription>
-                  Décrivez votre projet et nous vous recontacterons rapidement
-                </CardDescription>
-              </CardHeader>
+                <CardHeader>
+                  <CardTitle className="text-xl md:text-2xl">Demande de devis</CardTitle>
+                  <CardDescription className="text-base">
+                    Décrivez votre projet et nous vous recontacterons rapidement
+                  </CardDescription>
+                </CardHeader>
               <CardContent>
                 <form className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">

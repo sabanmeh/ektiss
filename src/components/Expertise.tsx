@@ -43,10 +43,10 @@ const Expertise = () => {
         <div className="max-w-6xl mx-auto">
           {/* Types de projets */}
           <div className="mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6 text-center tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center tracking-tight">
               Types de projets traités
             </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground text-center mb-16 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground text-center mb-16 max-w-3xl mx-auto leading-relaxed">
               Nous intervenons sur une grande variété de projets, en neuf comme en réhabilitation
             </p>
             
@@ -67,8 +67,8 @@ const Expertise = () => {
                       </div>
                     </div>
                     <CardHeader className="pb-6">
-                      <CardTitle className="text-xl font-bold tracking-tight">{projet.title}</CardTitle>
-                      <CardDescription className="text-base leading-relaxed">{projet.description}</CardDescription>
+                      <CardTitle className="text-lg md:text-xl font-bold tracking-tight">{projet.title}</CardTitle>
+                      <CardDescription className="text-sm md:text-base leading-relaxed">{projet.description}</CardDescription>
                     </CardHeader>
                   </Card>
                 );
@@ -78,14 +78,14 @@ const Expertise = () => {
 
           {/* Secteurs d'intervention */}
           <div className="mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center tracking-tight">
               Secteurs d'intervention
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="bg-primary text-white">
                 <CardHeader>
                   <Badge variant="secondary" className="w-fit mb-2">Secteur Public</Badge>
-                  <CardTitle className="text-2xl">Marchés publics</CardTitle>
+                  <CardTitle className="text-xl md:text-2xl">Marchés publics</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-white/90">
@@ -98,7 +98,7 @@ const Expertise = () => {
               <Card className="bg-secondary text-primary">
                 <CardHeader>
                   <Badge variant="outline" className="w-fit mb-2 border-primary text-primary">Secteur Privé</Badge>
-                  <CardTitle className="text-2xl">Marchés privés</CardTitle>
+                  <CardTitle className="text-xl md:text-2xl">Marchés privés</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
@@ -111,7 +111,7 @@ const Expertise = () => {
 
           {/* Nos clients */}
           <div>
-            <h2 className="text-4xl font-bold text-primary mb-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center tracking-tight">
               Nos clients
             </h2>
             <div className="bg-section rounded-xl p-8">
