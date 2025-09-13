@@ -48,7 +48,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-section relative">
+    <section id="services" className="py-24 bg-section relative">
       {/* Image décorative en arrière-plan */}
       <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1/3 h-2/3 opacity-5 hidden lg:block">
         <img 
@@ -58,37 +58,37 @@ const Services = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center mb-20">
+          <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6 tracking-tight">
             Nos missions
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
             Notre mission ? Être l'interface technique et financière entre la maîtrise d'ouvrage, 
             la maîtrise d'œuvre et les entreprises.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Card key={index} className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex items-center space-x-3 mb-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <IconComponent className="w-6 h-6 text-primary" />
+              <Card key={index} className="h-full hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/95 backdrop-blur-sm border-0 shadow-lg rounded-2xl overflow-hidden group">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-primary/10 to-primary/20 group-hover:from-primary/20 group-hover:to-primary/30 transition-all duration-500">
+                      <IconComponent className="w-7 h-7 text-primary" />
                     </div>
-                    <CardTitle className="text-xl text-primary">{service.title}</CardTitle>
+                    <CardTitle className="text-2xl font-bold text-primary tracking-tight">{service.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-lg">{service.description}</CardDescription>
+                  <CardDescription className="text-lg text-muted-foreground leading-relaxed">{service.description}</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
+                <CardContent className="pt-0">
+                  <ul className="space-y-4">
                     {service.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-start space-x-2">
-                        <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></div>
-                        <span className="text-foreground">{item}</span>
+                      <li key={itemIndex} className="flex items-start space-x-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-3 flex-shrink-0"></div>
+                        <span className="text-foreground leading-relaxed">{item}</span>
                       </li>
                     ))}
                   </ul>

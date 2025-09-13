@@ -17,7 +17,7 @@ const Hero = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <section id="accueil" className="relative h-full flex items-center justify-center text-white pt-16">
+      <section id="accueil" className="relative h-full flex items-center justify-center text-white pt-20">
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -30,18 +30,18 @@ const Hero = () => {
               garantir la maîtrise des coûts et la qualité technique des prestations, du premier trait de crayon à la livraison finale.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 onClick={scrollToContact}
                 size="lg"
-                className="bg-secondary text-primary hover:bg-secondary/90 font-semibold px-8 py-3 transition-all duration-300"
+                className="bg-secondary text-primary hover:bg-secondary/90 font-semibold px-10 py-4 text-lg transition-all duration-300 hover:-translate-y-1 shadow-2xl hover:shadow-3xl rounded-full"
               >
                 Démarrer votre projet
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-white/80 text-white hover:bg-white hover:text-primary hover:border-white px-8 py-3 transition-all duration-300 bg-transparent"
+                className="border-2 border-white/60 text-white hover:bg-white hover:text-primary hover:border-white px-10 py-4 text-lg transition-all duration-300 bg-white/5 backdrop-blur-sm hover:-translate-y-1 shadow-2xl hover:shadow-3xl rounded-full"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Découvrir nos services

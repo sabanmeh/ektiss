@@ -7,22 +7,22 @@ import dekraProfileWoman from "@/assets/dekra-profile-woman.jpg";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-section">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">
+    <section id="contact" className="py-24 bg-section">
+      <div className="container mx-auto px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6 tracking-tight">
               Contactez-nous
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               Parlons de votre projet ensemble
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-12">
             {/* Informations de contact */}
             <div className="space-y-6">
-              <Card>
+              <Card className="border-0 shadow-xl rounded-2xl bg-white/95 backdrop-blur-sm">
                 <CardHeader className="text-left">
                   {/* Photo de profil */}
                   <div className="flex justify-start mb-4">
@@ -63,7 +63,7 @@ const Contact = () => {
             </div>
 
             {/* Formulaire de contact */}
-            <Card>
+            <Card className="border-0 shadow-xl rounded-2xl bg-white/95 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle>Demande de devis</CardTitle>
                 <CardDescription>

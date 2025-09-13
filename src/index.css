@@ -31,16 +31,35 @@ All colors MUST be HSL.
     
     --hero-gradient: linear-gradient(135deg, hsl(240 63% 16%) 0%, hsl(240 50% 25%) 100%);
     --gold-gradient: linear-gradient(135deg, hsl(45 71% 64%) 0%, hsl(45 80% 70%) 100%);
-    --section-bg: hsl(0 0% 98%);
+    --section-bg: hsl(0 0% 99%);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 240 63% 16%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Modern spacing tokens */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    --spacing-3xl: 6rem;
+
+    /* Modern shadows */
+    --shadow-soft: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-elegant: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+    /* Modern gradients */
+    --gradient-subtle: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 99%) 100%);
 
     --sidebar-background: 0 0% 98%;
 

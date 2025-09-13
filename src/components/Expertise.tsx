@@ -38,37 +38,37 @@ const Expertise = () => {
   ];
 
   return (
-    <section id="expertise" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="expertise" className="py-24 bg-background">
+      <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Types de projets */}
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4 text-center">
+          <div className="mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6 text-center tracking-tight">
               Types de projets traités
             </h2>
-            <p className="text-xl text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-muted-foreground text-center mb-16 max-w-4xl mx-auto leading-relaxed">
               Nous intervenons sur une grande variété de projets, en neuf comme en réhabilitation
             </p>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {projets.map((projet, index) => {
                 const IconComponent = projet.icon;
                 return (
-                  <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
-                    <div className="relative h-40 overflow-hidden">
+                  <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 overflow-hidden border-0 shadow-lg rounded-2xl bg-white/95 backdrop-blur-sm">
+                    <div className="relative h-48 overflow-hidden">
                       <img 
                         src={projet.image}
                         alt={projet.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/30 transition-colors duration-300"></div>
-                      <div className="absolute top-4 left-4 p-2 rounded-full bg-white shadow-lg">
-                        <IconComponent className="w-6 h-6 text-primary" />
+                      <div className="absolute top-4 left-4 p-3 rounded-xl bg-white/95 backdrop-blur-sm shadow-xl">
+                        <IconComponent className="w-7 h-7 text-primary" />
                       </div>
                     </div>
-                    <CardHeader>
-                      <CardTitle className="text-lg">{projet.title}</CardTitle>
-                      <CardDescription className="text-sm">{projet.description}</CardDescription>
+                    <CardHeader className="pb-6">
+                      <CardTitle className="text-xl font-bold tracking-tight">{projet.title}</CardTitle>
+                      <CardDescription className="text-base leading-relaxed">{projet.description}</CardDescription>
                     </CardHeader>
                   </Card>
                 );
