@@ -13,26 +13,26 @@ const Header = () => {
           <img 
             src="/lovable-uploads/a7ab6e40-60d5-4f23-88fa-ecdecd663d6a.png" 
             alt="EKTISS" 
-            className="h-8"
+            className="h-8 brightness-0 invert"
           />
         </div>
         
         <nav className="hidden md:flex items-center space-x-10">
           <button 
             onClick={() => scrollToSection('accueil')}
-            className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide"
+            className="text-white/80 hover:text-white transition-all duration-300 font-medium text-sm tracking-wide"
           >
             Accueil
           </button>
           <button 
             onClick={() => scrollToSection('services')}
-            className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide"
+            className="text-white/80 hover:text-white transition-all duration-300 font-medium text-sm tracking-wide"
           >
             Services
           </button>
           <button 
             onClick={() => scrollToSection('expertise')}
-            className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide"
+            className="text-white/80 hover:text-white transition-all duration-300 font-medium text-sm tracking-wide"
           >
             Expertise
           </button>
@@ -40,7 +40,7 @@ const Header = () => {
             href="https://portail.ektiss.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-sm tracking-wide"
+            className="text-white/80 hover:text-white transition-all duration-300 font-medium text-sm tracking-wide"
           >
             Portail client
           </a>
@@ -49,7 +49,7 @@ const Header = () => {
         <Button 
           onClick={() => scrollToSection('contact')}
           variant="default"
-          className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 px-6 py-2.5 rounded-xl font-medium"
+          className="bg-secondary text-primary hover:bg-secondary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 px-6 py-2.5 rounded-xl font-medium"
         >
           Nous contacter
         </Button>
