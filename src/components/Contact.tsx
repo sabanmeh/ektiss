@@ -53,7 +53,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <div className="bg-primary text-white p-6 rounded-lg">
+              <div className="bg-primary text-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold mb-4">Notre engagement</h3>
                 <p className="text-white/90">
                   Grâce à notre expertise, nous sécurisons les choix économiques, 
@@ -83,7 +83,7 @@ const Contact = () => {
                     placeholder="Décrivez votre projet..." 
                     className="min-h-[120px]" 
                   />
-                  <Button className="w-full bg-primary hover:bg-primary/90">
+                  <Button className="w-full bg-primary hover:bg-primary/90 rounded-xl">
                     Envoyer ma demande
                   </Button>
                 </form>

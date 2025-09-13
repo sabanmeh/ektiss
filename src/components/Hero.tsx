@@ -34,14 +34,14 @@ const Hero = () => {
               <Button 
                 onClick={scrollToContact}
                 size="lg"
-                className="bg-secondary text-primary hover:bg-secondary/90 font-semibold px-10 py-4 text-lg transition-all duration-300 hover:-translate-y-1 shadow-2xl hover:shadow-3xl rounded-full"
+                className="bg-secondary text-primary hover:bg-secondary/90 font-semibold px-10 py-4 text-lg transition-all duration-300 hover:-translate-y-1 shadow-2xl hover:shadow-3xl rounded-xl"
               >
                 Démarrer votre projet
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-white/60 text-white hover:bg-white hover:text-primary hover:border-white px-10 py-4 text-lg transition-all duration-300 bg-white/5 backdrop-blur-sm hover:-translate-y-1 shadow-2xl hover:shadow-3xl rounded-full"
+                className="border-2 border-white/60 text-white hover:bg-white hover:text-primary hover:border-white px-10 py-4 text-lg transition-all duration-300 bg-white/5 backdrop-blur-sm hover:-translate-y-1 shadow-2xl hover:shadow-3xl rounded-xl"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Découvrir nos services

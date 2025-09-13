@@ -42,6 +42,9 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
+    /* Consistent button radius */
+    --button-radius: 0.75rem;
+
     /* Modern spacing tokens */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;

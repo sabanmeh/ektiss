@@ -114,7 +114,7 @@ const Expertise = () => {
             <h2 className="text-4xl font-bold text-primary mb-8 text-center">
               Nos clients
             </h2>
-            <div className="bg-section rounded-lg p-8">
+            <div className="bg-section rounded-xl p-8">
               <div className="grid md:grid-cols-2 gap-6">
                 {clients.map((client, index) => (
                   <div key={index} className="flex items-start space-x-3">
