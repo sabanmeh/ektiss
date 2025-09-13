@@ -60,10 +60,10 @@ const Services = () => {
 
       <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 tracking-tight">
               Nos missions
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Notre mission ? Être l'interface technique et financière entre la maîtrise d'ouvrage, 
               la maîtrise d'œuvre et les entreprises.
             </p>
@@ -79,9 +79,9 @@ const Services = () => {
                     <div className="p-3 rounded-xl bg-gradient-to-br from-primary/10 to-primary/20 group-hover:from-primary/20 group-hover:to-primary/30 transition-all duration-500">
                       <IconComponent className="w-7 h-7 text-primary" />
                     </div>
-                    <CardTitle className="text-xl md:text-2xl font-bold tracking-tight">{service.title}</CardTitle>
+                    <CardTitle className="text-lg md:text-xl font-bold tracking-tight">{service.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-base md:text-lg text-muted-foreground leading-relaxed">{service.description}</CardDescription>
+                  <CardDescription className="text-sm md:text-base text-muted-foreground leading-relaxed">{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <ul className="space-y-4">
