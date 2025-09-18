@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Header = () => {
@@ -79,10 +81,11 @@ const Header = () => {
           </a>
         </nav>
 
+        {/* Desktop Contact Button */}
         <Button 
           onClick={() => scrollToSection('contact')}
           variant="default"
-          className={`shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 px-6 py-2.5 rounded-xl font-medium ${
+          className={`hidden md:flex shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 px-6 py-2.5 rounded-xl font-medium ${
             isScrolled 
               ? 'bg-primary hover:bg-primary/90 text-white' 
               : 'bg-secondary text-primary hover:bg-secondary/90'
@@ -90,6 +93,60 @@ const Header = () => {
         >
           Nous contacter
         </Button>
+
+        {/* Mobile Menu */}
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button
+              variant="ghost"
+              size="icon"
+              className={`md:hidden ${
+                isScrolled 
+                  ? 'text-primary hover:bg-primary/10' 
+                  : 'text-white hover:bg-white/10'
+              }`}
+            >
+              <Menu className="h-6 w-6" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="right" className="w-80 bg-background/95 backdrop-blur-md">
+            <div className="flex flex-col space-y-6 mt-8">
+              <button 
+                onClick={() => scrollToSection('accueil')}
+                className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Accueil
+              </button>
+              <button 
+                onClick={() => scrollToSection('services')}
+                className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Services
+              </button>
+              <button 
+                onClick={() => scrollToSection('expertise')}
+                className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Expertise
+              </button>
+              <a 
+                href="https://portail.ektiss.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-left text-lg font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Appels d'offres
+              </a>
+              <Button 
+                onClick={() => scrollToSection('contact')}
+                variant="default"
+                className="mt-8 w-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 px-6 py-3 rounded-xl font-medium"
+              >
+                Nous contacter
+              </Button>
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
     </header>
   );
