@@ -75,7 +75,7 @@ const Header = () => {
                 : 'text-white/80 hover:text-white'
             }`}
           >
-            Portail client
+            Appels d'offres
           </a>
         </nav>
 
