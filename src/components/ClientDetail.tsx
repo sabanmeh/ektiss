@@ -207,7 +207,7 @@ const ClientDetail = () => {
           <div className="lg:col-span-1">
             <Card className="bg-primary text-white mb-6">
               <CardHeader>
-                <CardTitle className="text-lg">Missions réalisées par LI2C :</CardTitle>
+                <CardTitle className="text-lg">Missions réalisées par EKTISS :</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
