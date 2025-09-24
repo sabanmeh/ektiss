@@ -101,7 +101,6 @@ const Expertise = () => {
                           alt={projet.title}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         />
-                        <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/30 transition-colors duration-300"></div>
                         <div className="absolute top-4 left-4 p-3 rounded-xl bg-white/95 backdrop-blur-sm shadow-xl">
                           <IconComponent className="w-7 h-7 text-primary" />
                         </div>
