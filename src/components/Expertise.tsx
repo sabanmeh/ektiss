@@ -116,8 +116,8 @@ const Expertise = () => {
                           <CollapsibleTrigger className="w-full">
                             <div className={`px-6 py-4 transition-all duration-300 cursor-pointer ${
                               isExpanded 
-                                ? 'bg-gradient-to-r from-primary to-primary/80 text-white' 
-                                : 'bg-gradient-to-r from-secondary to-secondary/80 text-primary hover:from-primary/10 hover:to-primary/5'
+                                ? 'bg-primary text-white' 
+                                : 'bg-secondary text-primary hover:bg-primary/10'
                             }`}>
                               <div className="flex items-center justify-between">
                                 <div className="flex items-center gap-2">
